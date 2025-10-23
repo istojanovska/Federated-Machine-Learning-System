@@ -13,7 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 app = FastAPI()
 executor = ThreadPoolExecutor(max_workers=3)
 
-BASE_PATH = r"C:\Users\User\Downloads\FederatedLearningParalel\app\datasets"
+BASE_PATH = r"your\path\to\the\datasets"
 
 class ModelWeights(BaseModel):
     coef: list[list[float]]
